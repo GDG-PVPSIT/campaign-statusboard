@@ -3,11 +3,33 @@
     scroll-behavior: smooth;
 }
 
+body{
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.gccp_data {
+    width: 100%;
+}
+
 .container{
     align-items: center;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 500px){
+    .container{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 /* body::-webkit-scrollbar{
@@ -35,6 +57,7 @@
 
 .table{
     border: black solid 3px;
+    overflow-x: scroll;
 }
 
 .table thead{
